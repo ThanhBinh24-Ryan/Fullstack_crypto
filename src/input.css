@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #151937;
+}
+
+.gardient{
+ 
+background: linear-gradient(to right, #e66465, #9198e5); /* Tạo gradient từ màu #e66465 sang #9198e5 */
+-webkit-background-clip: text; /* Cắt hình nền vào phần chữ */
+color: transparent; /* Làm cho màu chữ mặc định trong suốt */     
+}
+.button-bank{
+    background: linear-gradient(to right, #ff5858,#9198e5); /* Tạo gradient từ màu đỏ sang màu cam */
+    border: none; /* Loại bỏ viền của button */
+    border-radius: 9999px; /* Tạo bo tròn cho button */
+    color: white; /* Màu chữ là trắng */
+    padding: 10px 20px; /* Padding cho nút */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Hiệu ứng con trỏ khi hover */
+  /* Hiệu ứng chuyển màu khi hover */
+   
+}
+.h1_caption .text_gardient{
+    background: linear-gradient(to right, #e66465, #9198e5); /* Tạo gradient từ màu #e66465 sang #9198e5 */
+    -webkit-background-clip: text; /* Cắt hình nền vào phần chữ */
+    color: transparent; /* Làm cho màu chữ mặc định trong suốt */     
+}
+.h1_feed_back .cilents{
+    background: linear-gradient(to right, #e66465, #9198e5); /* Tạo gradient từ màu #e66465 sang #9198e5 */
+    -webkit-background-clip: text; /* Cắt hình nền vào phần chữ */
+    color: transparent; /* Làm cho màu chữ mặc định trong suốt */     
+}
+.feed_back_content {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Đảm bảo carousel không vượt quá kích thước của phần chứa */
+}
+
+.feed_back_carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Hiển thị 2 nhóm item mỗi lần */
+}
+
+.feed_back_item {
+    flex: 0 0 50%; /* Mỗi item chiếm 50% của carousel */
+    box-sizing: border-box;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: red;
+}
+footer{
+   margin-left: 85px;
+   margin-right: 85px;
+    margin-top: 60px;
+    background-color: #29304f;
+    border-radius: 20px;
+}
+footer{
+    font-size: 19px;
+}
+.footer_gardient{
+    background: linear-gradient(to right, #e66465, #9198e5); /* Tạo gradient từ màu #e66465 sang #9198e5 */
+    -webkit-background-clip: text; /* Cắt hình nền vào phần chữ */
+    color: transparent; /* Làm cho màu chữ mặc định trong suốt */     
+}
+.footer_link{
+margin-left: 0px;
+}
+
+.footer_legal{
+    margin-left: 20px;
+}
+
+.footer_input_text{
+   width: 50%;
+    border-radius: 8px;
+    padding: 5px;
+}
+.footer_link{
+    margin-left: 40%;
+}
+.button-gardient{
+    background: linear-gradient(to right, #ff5858,#9198e5); /* Tạo gradient từ màu đỏ sang màu cam */
+    border: none; /* Loại bỏ viền của button */
+    border-radius: 9px; /* Tạo bo tròn cho button */
+    color: white; /* Màu chữ là trắng */
+    padding: 10px 20px; /* Padding cho nút */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Hiệu ứng con trỏ khi hover */
+  /* Hiệu ứng chuyển màu khi hover */
+  background-color: unset;
+
+}
+.input_custom{
+    background-color: unset;
+    border: none;
+    outline: none;
+}
+/* Chỉnh sửa cho phần chứa input và button */
+.p-2 {
+    background-color: #232743; /* Màu nền xám đậm */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 10px; /* Bo góc */
+    display: flex;
+    align-items: center;
+    max-width: 400px; /* Giới hạn chiều rộng */
+}
+
+/* Chỉnh sửa cho input */
+.input_custom {
+    background-color: transparent;
+    color: #c4c7cf; /* Màu chữ xám nhạt */
+    font-size: 16px; /* Kích thước chữ */
+    flex: 1;
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+}
+
+.p-2 {
+    background-color: #232743; /* Màu nền xám đậm */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 10px; /* Bo góc */
+    display: flex;
+    align-items: center;
+    width: 340px; /* Giới hạn chiều rộng */
+    position: relative; /* Đặt container ở vị trí tương đối để định vị button tuyệt đối */
+}
+
+/* Chỉnh sửa cho input */
+.input_custom {
+    background-color: transparent;
+    color: #c4c7cf; /* Màu chữ xám nhạt */
+    font-size: 16px; /* Kích thước chữ */
+    padding: 12px 24px; /* Khoảng cách bên trong */
+    border-radius: 10px; /* Bo góc */
+    width: 100%; /* Input chiếm toàn bộ chiều rộng container */
+
+    padding-right: 120px; /* Tạo khoảng trống để nút không che mất text */
+}
+
+/* Chỉnh sửa cho button */
+.button-gardient {
+    background: linear-gradient(to right, #ff5858,#9198e5);  /* Tạo gradient từ màu đỏ sang màu hồng nhạt */
+    border: 1px solid #c4c7cf; /* Đường viền màu xám nhạt giống input */
+    border-radius: 8px; /* Bo góc */
+    color: white; /* Màu chữ trắng */
+    padding: 12px 24px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ pointer */
+    position: absolute; /* Đặt button ở vị trí tuyệt đối */
+    right: 10px; /* Đặt button ở bên phải container */
+    top: 50%; /* Đặt button ở giữa chiều cao của container */
+    transform: translateY(-50%); /* Điều chỉnh để button nằm đúng giữa */
+    
+}
+.grid{
+    margin: 30px 100px;
+} 
+.grid .item_grid{
+    background-color: #232743;
+    border-radius: 15px;
+}
+.h1_grid{
+    font-size: 25px;
+}
+.p_grid{
+    font-size: 20px;
+    
+}
+.item_grid img{
+    margin-left: 40px;
+}
+.item_grid i{
+    margin-left: 45%;
+    margin-bottom: 15px
+}
+.jano{
+    margin-left: 0px;
+}
+.footer_link{
+    margin-left: 130px;
+}
+.footer_legal{
+    margin-left: 40px;
+}
